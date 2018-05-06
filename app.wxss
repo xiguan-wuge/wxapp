@@ -1,0 +1,5 @@
+/**app.wxss**/
+/* 全局样式 */
+page,.container{
+  height: 100%;
+}
