@@ -1,0 +1,12 @@
+<template name="spinner">
+  <!-- 控制显示与否 -->
+  <!-- wx:if  是否向页面输出 -->
+    <block wx:if="{{isLoading}}">
+      <view class="spinner">
+        <view class="bounce1"></view>
+        <view class="bounce2"></view>
+        <view class="bounce3"></view>
+      </view>
+    </block>
+  </template>
+  
