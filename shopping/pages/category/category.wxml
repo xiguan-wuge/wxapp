@@ -1,2 +1,10 @@
 <!--pages/category/category.wxml-->
-<text>pages/category/category.wxml</text>
+<view class="main">
+  <view class="header">
+    <!-- 头像 太大 技巧 三个元素，头像 名字 关于
+    垂直对齐 -->
+    <open-data class="thumb" type="userAvatarUrl"></open-data>
+    <open-data class="nickname" lang="zh_CN" type="userNickName"></open-data>
+    <text class="about">关于我们</text>
+  </view>
+</view>

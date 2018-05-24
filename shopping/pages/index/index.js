@@ -1,54 +1,85 @@
 //index.js
 //获取应用实例
+import goods from '../../api/goods.js'
 const app = getApp()
 
 Page({
   data: {
-    motto: 'Hello World',
-    userInfo: {},
-    hasUserInfo: false,
-    canIUse: wx.canIUse('button.open-type.getUserInfo')
+    num:1,
+    show:false,
+    totalNum:0,
+    scaleCart:false,
+    goods:null,
+    index:0,
+    info:goods[1].detail
   },
-  //事件处理函数
-  bindViewTap: function() {
-    wx.navigateTo({
-      url: '../logs/logs'
+  onLoad (options){
+    let id=options.id || 2;
+    let curGoods;
+    for(let i=0;i<goods.length;i++){
+      if(goods[i].id===id){
+        curGoods=goods[i];
+        break;
+      }
+    }
+    setTimeout(()=>{
+      this.setData({
+        goods:curGoods
+      });
+    },1000)
+    this.setData({
+      goods
+    });
+    console.log(this.goods)
+    // console.log('假的')
+  },
+  addCount(){
+    let num=++this.data.num; 
+    const total=this.data.totalNum;
+    this.setData({
+      num
     })
   },
-  onLoad: function () {
-    if (app.globalData.userInfo) {
+  addToCart(){
+    const num=this.data.num;
+    const total=this.data.totalNum;
+    this.setData({
+      show:true
+    });
+    setTimeout(()=>{
       this.setData({
-        userInfo: app.globalData.userInfo,
-        hasUserInfo: true
-      })
-    } else if (this.data.canIUse){
-      // 由于 getUserInfo 是网络请求，可能会在 Page.onLoad 之后才返回
-      // 所以此处加入 callback 以防止这种情况
-      app.userInfoReadyCallback = res => {
+        show:false,
+        scaleCart:true
+      });
+      setTimeout(()=>{
         this.setData({
-          userInfo: res.userInfo,
-          hasUserInfo: true
+          scaleCart:false,
+          hasCarts:true,
+          totalNum:num+total
         })
-      }
-    } else {
-      // 在没有 open-type=getUserInfo 版本的兼容处理
-      wx.getUserInfo({
-        success: res => {
-          app.globalData.userInfo = res.userInfo
-          this.setData({
-            userInfo: res.userInfo,
-            hasUserInfo: true
-          })
-        }
+      },500)
+    },800)
+  },
+  switchTab(e){
+    let index=e.currentTarget.dataset.index;
+    let goods=this.data.goods;
+    if(index==0){
+      this.setData({
+        info:goods.detail,
+        index:0
+
+      })
+      
+    }else if(index==1){
+      this.setData({
+        info:goods.parameter,
+        index:1
+      })
+    }else{
+      this.setData({
+        info:goods.service,
+        index:2
       })
     }
-  },
-  getUserInfo: function(e) {
-    console.log(e)
-    app.globalData.userInfo = e.detail.userInfo
-    this.setData({
-      userInfo: e.detail.userInfo,
-      hasUserInfo: true
-    })
   }
 })

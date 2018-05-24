@@ -1,0 +1,28 @@
+/* pages/address/address.wxss */
+.username,.user-tel,.user-address-detail{
+  width: 100%;
+  height: 100rpx;
+  line-height: 100rpx;
+  border-bottom: 1px solid #f1f1f1
+}
+.name,.tel,.address-detail{
+  width: 20%;
+  height: 100%;
+  margin-left: 20rpx;
+  /* background-color: blue; */
+}
+.name-in,.tel-in,.address-in{
+  width: 75%;
+  height: 100%;
+  float: right;
+  /* background-color: red; */
+  box-sizing: border-box;
+}
+.user-submit{
+  width: 700rpx;
+  height: 100rpx;
+  border: 1px solid #f1f1f1;
+  background-color: #e1e1e1;
+  margin: 20rpx;
+  border-radius: 15rpx;
+}

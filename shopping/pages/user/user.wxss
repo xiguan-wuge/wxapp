@@ -1,1 +1,23 @@
 /* pages/user/user.wxss */
+
+.address-manage{
+  width: 100%;
+  height: 100rpx;
+  background-color: #fff;
+  border: 1px solid #d9d9d9;
+  font-size: 40rpx;
+}
+.address-title{
+  display: inline-block;
+  width: 650rpx;
+  height: 100rpx;
+  line-height: 100rpx;
+  text-align: center;
+}
+.address-into{
+  float: right;
+  width: 60rpx;
+  height: 100rpx;
+  line-height: 100rpx;
+  margin-right: 25rpx;
+}

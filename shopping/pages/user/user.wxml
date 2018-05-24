@@ -1,2 +1,12 @@
 <!--pages/user/user.wxml-->
-<text>pages/user/user.wxml</text>
+<view class="container">
+  <view class="header">
+    <!-- <text class="title">零食</text> -->
+  </view>
+  <navigator url="../address/address">
+    <view class="address-manage" bindtap="addressManage">
+      <text class="address-title">地址管理</text>
+      <text class="address-into">></text>
+    </view>
+  </navigator>
+</view>

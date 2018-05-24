@@ -1,0 +1,18 @@
+<!--pages/address/address.wxml-->
+<navigator></navigator>
+<view class="container">
+ <view class="username">
+   <text class="name">姓名</text> 
+   <input type="text" name="username" class="name-in" bindinput="setNameInput" value="{{addName}}"/>
+ </view>
+ <view class="user-tel">
+  <text class="tel">电话号码</text>
+  <input type="text" name="user-tel" class="tel-in" bindinput="setTelInput" 
+  value="{{addTel}}"/>
+</view>
+<view class="user-address-detail">
+  <text class="address-detail">详细地址</text>
+  <input type="text" name="address-detail" class="address-in" bindinput="setAddressInput" value="{{addAddress}}"/>
+</view>
+  <button class="user-submit" bindtap="userInfoSubmit">保存</button>
+</view>
