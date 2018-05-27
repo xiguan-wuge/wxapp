@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="index.css">
+  <title>数字输入</title>
+</head>
+<body>
+  <script>
+    // 适配问题 不同的手机1rem 单位是 宽度10分之1
+    // 1rem = html fontsize
+    (function(w){
+      // window 是js 全局 dom document 只是其中一部分
+      // 导航location.href　  navigator lbs 经纬度
+      // 陀螺仪 储存localstorage
+      let s = w.document;
+      // 找到html元素
+      let r = s.documentElement;
+      // 宽度的十分之一
+      let colWidth = r.clientWidth/10;
+
+      console.log(colWidth);
+      r.style.fontSize = colWidth + 'px';
+      
+    })(window)
+</script>
+  <div class="container">
+    <div class="hd">
+      <sapn class="title">输入密码</span>
+    </div>
+    <div class="bd">
+      <div class="num ">1</div>
+      <div class="num ">2</div>
+      <div class="num ">3</div>
+      <div class="num ">4</div>
+      <div class="num ">5</div>
+      <div class="num ">6</div>
+      <div class="num ">7</div>
+      <div class="num ">8</div>
+      <div class="num ">9</div>
+      <div class="num last">0</div>
+    </div>
+    <!-- <div class="ft"> -->
+      <a href="#" class="call">紧急呼叫</a>
+      <a href="#" class="cancel">取消</a>
+    <!-- </div> -->
+  </div>
+</body>
+</html>
