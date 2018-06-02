@@ -1,0 +1,138 @@
+/**index.wxss**/
+page {
+  margin: 0;
+  padding: 0;
+}
+view{
+  margin: 0;
+  padding: 0;
+}
+.container{
+  width: 100%;
+   padding:0; 
+ 
+}
+.header{
+  justify-content: space-around;
+  display: flex;
+  width: 100%;
+  height: 80rpx;
+  background-color: #ffc640;
+}
+.header-location{
+  font-size: 30rpx;
+  padding: 5rpx 15rpx;
+  margin: 10rpx;
+  height: 40rpx;
+  width: 150rpx;
+  line-height: 40rpx;
+}
+.header-search{
+  font-size: 30rpx;
+  padding: 5rpx 15rpx;
+  margin: 10rpx;
+  height: 40rpx;
+  width: 550rpx;
+  background: white;
+  border-radius: 20rpx;
+  line-height: 40rpx;
+}
+.header-search-icon{
+  width: 35rpx;
+  height: 35rpx;
+}
+.categoryList{
+  width: 100%;
+  height: 350rpx;
+  border-bottom: 20rpx solid #f4f4f4;
+}
+.category-info{
+  display: inline-block;
+  text-align: center;
+  /* position: relative; */
+  margin-top: 20rpx;
+  height: 150rpx;
+  width: 25%;
+}
+.category-image{
+  width: 95rpx;
+  height: 95rpx;
+}
+.category-text{
+  font-size: 30rpx;
+  width: 100%;
+  line-height: 30rpx;
+}
+.segmenting-line{
+  text-align: center;
+  font-size: 40rpx;
+  color: #888d8e;
+}
+.tourist-spot-info{
+  width: 750rpx;
+  display: flex;
+  margin: 0;
+  padding: 10rpx 0;
+  border-bottom: 1rpx solid #ececec;
+  justify-content: space-between;
+  /* background-color: #ffc640; */
+}
+.tourst-image{
+  width: 190rpx;
+  height: 180rpx;
+  margin-top: 20rpx;
+  margin-left: 20rpx;
+}
+.tourist-detail-info{
+  position: relative;
+  background-color: #fff;
+  width: 500rpx;
+  height: 180rpx;
+  /* display: flex; */
+  margin: 15rpx;
+  /* flex: 1; */
+}
+.tourist-info-name{
+  color: black;
+  font-size: 30rpx;
+  /* margin-bottom: 10rpx; */
+}
+.evaluate-level,.evaluate-score{
+  color: darkblue;
+  font-size: 25rpx;
+}
+.consume-num{
+  font-size: 25rpx;
+  color: #888d8e;
+}
+.unique-feature{
+  display: flex;
+}
+.feature{
+  display: inline-block;
+  color: #007acc;
+  font-size: 23rpx;
+  height: 35rpx;
+  line-height: 35rpx;
+  text-align: center;
+  border: 1rpx solid #007acc;
+  margin: 5rpx;
+  padding: 0 3rpx;
+}
+.unique-feature .feature:nth-child(1){
+  margin-left:0; 
+}
+.price{
+  color: red;
+  font-size: 25rpx;
+  position: absolute;
+  bottom: 10rpx;
+  left: 2rpx;
+}
+.tourist-location{
+  font-size: 25rpx;
+  color: #888d8e;
+  position: absolute;
+  bottom: 10rpx;
+  right: 25rpx;
+}
