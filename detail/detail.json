@@ -1,0 +1,18 @@
+{
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "./images/icons/home.png",
+        "selectedIconPath": "./images/icons/homecolor.png"
+      },
+      {
+        "pagePath": "pages/user/user",
+        "text": "我的",
+        "iconPath": "./images/icons/user.png",
+        "selectedIconPath": "./images/icons/usercolor.png"
+      }
+    ]
+  }
+}

@@ -1,0 +1,257 @@
+<!--pages/detail/detail.wxml-->
+<page>
+  <view class="container">
+    <view class="header">
+      <image src="/images/tourist/nanchangwandahangyangleyaun.jpg">
+      </image>
+      <text class="tourist-spot-name">南昌万达海洋乐园</text>
+      <text class="stars">
+        <text class="rating-stars">
+          <text class="rating-star rating-star-small-full"></text>
+          <text class="rating-star rating-star-small-full"></text>
+          <text class="rating-star rating-star-small-full"></text>
+          <text class="rating-star rating-star-small-full"></text>
+          <text class="rating-star rating-star-small-gray"></text>
+        </text>
+      </text>
+      <navigator url="">
+        <text class="tourist-spot-intro">景点介绍 ></text>
+      </navigator>
+      <navigator url="">
+        <view class="location-detail">
+          <image class="location-icon" src="/images/icons/icon_location.png"></image>
+          <text class="location-text">新建区九龙湖新区</text>
+          <text class="location-to">></text>
+        </view>
+      </navigator>
+    </view>
+    <view class="content">
+      <view class="title">
+        <text class="entrance-ticket">门票</text>
+        <navigator url="">
+          <text class="notice">预订须知</text>
+        </navigator>
+      </view>
+      <text class="recommend">美团推荐</text>
+      <view class="buy-ticket">
+        <view class="ticket-text">
+          <text class="ticket-info">南昌万达海洋乐园平日/周末大学生门票,入园前均可购买</text>
+          <view class="prompt">
+            <text class="prompt-text">最早可订明日票</text>
+            <text class="prompt-text">有条件退</text>
+            <text class="icon-text">></text>
+          </view>
+        </view>
+        <view class="buy">
+          <view class="price">
+            <text class="charcter">￥</text><text class="price-num">99</text><text class="price-text">起</text>
+          </view>
+          <navigator>
+            <text class="btn">立即预订</text>
+          </navigator>
+        </view>
+      </view>
+      <view class="buy-ticket">
+        <view class="ticket-text">
+          <text class="ticket-info">南昌万达海洋乐园平日/周末大学生门票,入园前均可购买</text>
+          <view class="prompt">
+            <text class="prompt-text">最早可订明日票</text>
+            <text class="prompt-text">有条件退</text>
+            <text class="icon-text">></text>
+          </view>
+        </view>
+        <view class="buy">
+          <view class="price">
+            <text class="charcter">￥</text><text class="price-num">99</text><text class="price-text">起</text>
+          </view>
+          <navigator>
+            <text class="btn">立即预订</text>
+          </navigator>
+        </view>
+      </view>
+      <view class="buy-ticket">
+        <view class="ticket-text">
+          <text class="ticket-info">南昌万达海洋乐园平日/周末大学生门票,入园前均可购买</text>
+          <view class="prompt">
+            <text class="prompt-text">最早可订明日票</text>
+            <text class="prompt-text">有条件退</text>
+            <text class="icon-text">></text>
+          </view>
+        </view>
+        <view class="buy">
+          <view class="price">
+            <text class="charcter">￥</text><text class="price-num">99</text><text class="price-text">起</text>
+          </view>
+          <navigator>
+            <text class="btn">立即预订</text>
+          </navigator>
+        </view>
+      </view>
+      <view class="buy-ticket">
+        <view class="ticket-text">
+          <text class="ticket-info">南昌万达海洋乐园平日/周末大学生门票,入园前均可购买</text>
+          <view class="prompt">
+            <text class="prompt-text">最早可订明日票</text>
+            <text class="prompt-text">有条件退</text>
+            <text class="icon-text">></text>
+          </view>
+        </view>
+        <view class="buy">
+          <view class="price">
+            <text class="charcter">￥</text><text class="price-num">99</text><text class="price-text">起</text>
+          </view>
+          <navigator>
+            <text class="btn">立即预订</text>
+          </navigator>
+        </view>
+      </view>
+      <view class="ticket-category">
+        <view class="ticket-name">成人票</view>
+        <view class="ticket-date">
+          <view class="ticket-info">平日票</view>
+          <view class="ticket-price">
+            <view class="now-price">
+              <text class="character">￥</text>
+              <text class="price-num">140</text>
+              <text class="price-text">起</text>
+              <text class="show-hide" bindtap="showOrHide">></text>
+            </view>
+            <view class="old-price">￥150</view>
+          </view>
+        </view>
+        <view class="buy-ticket" style="display:{{show_or_hide?'block':'none'}}">
+          <view class="ticket-text">
+            <text class="ticket-info">南昌万达海洋乐园平日/周末大学生门票,入园前均可购买</text>
+            <view class="prompt">
+              <text class="prompt-text">最早可订明日票</text>
+              <text class="prompt-text">有条件退</text>
+              <text class="icon-text">></text>
+            </view>
+          </view>
+          <view class="buy">
+            <view class="price">
+              <text class="charcter">￥</text><text class="price-num">99</text><text class="price-text">起</text>
+            </view>
+            <navigator>
+              <text class="btn">立即预订</text>
+            </navigator>
+          </view>
+        </view>
+        <view class="ticket-date">
+          <view class="ticket-info">平日票</view>
+          <view class="ticket-price">
+            <view class="now-price">
+              <text class="character">￥</text>
+              <text class="price-num">140</text>
+              <text class="price-text">起</text>
+              <text class="show-hide" bindtap="showOrHide">></text>
+            </view>
+            <view class="old-price">￥150</view>
+          </view>
+        </view>
+        <view class="buy-ticket" style="display:{{show_or_hide?'block':'none'}}">
+          <view class="ticket-text">
+            <text class="ticket-info">南昌万达海洋乐园平日/周末大学生门票,入园前均可购买</text>
+            <view class="prompt">
+              <text class="prompt-text">最早可订明日票</text>
+              <text class="prompt-text">有条件退</text>
+              <text class="icon-text">></text>
+            </view>
+          </view>
+          <view class="buy">
+            <view class="price">
+              <text class="charcter">￥</text><text class="price-num">99</text><text class="price-text">起</text>
+            </view>
+            <navigator>
+              <text class="btn">立即预订</text>
+            </navigator>
+          </view>
+        </view>
+      </view>
+      <view class="ticket-category">
+        <view class="ticket-name">成人票</view>
+        <view class="ticket-date">
+          <view class="ticket-info">平日票</view>
+          <view class="ticket-price">
+            <view class="now-price">
+              <text class="character">￥</text>
+              <text class="price-num">140</text>
+              <text class="price-text">起</text>
+              <text class="show-hide" bindtap="showOrHide">></text>
+            </view>
+            <view class="old-price">￥150</view>
+          </view>
+        </view>
+        <view class="buy-ticket" style="display:{{show_or_hide?'block':'none'}}">
+          <view class="ticket-text">
+            <text class="ticket-info">南昌万达海洋乐园平日/周末大学生门票,入园前均可购买</text>
+            <view class="prompt">
+              <text class="prompt-text">最早可订明日票</text>
+              <text class="prompt-text">有条件退</text>
+              <text class="icon-text">></text>
+            </view>
+          </view>
+          <view class="buy">
+            <view class="price">
+              <text class="charcter">￥</text><text class="price-num">99</text><text class="price-text">起</text>
+            </view>
+            <navigator>
+              <text class="btn">立即预订</text>
+            </navigator>
+          </view>
+        </view>
+      </view>
+      <view class="ticket-category">
+        <view class="ticket-name">成人票</view>
+        <view class="ticket-date">
+          <view class="ticket-info">平日票</view>
+          <view class="ticket-price">
+            <view class="now-price">
+              <text class="character">￥</text>
+              <text class="price-num">140</text>
+              <text class="price-text">起</text>
+              <text class="show-hide" bindtap="showOrHide">></text>
+            </view>
+            <view class="old-price">￥150</view>
+          </view>
+        </view>
+        <view class="buy-ticket" style="display:{{show_or_hide?'block':'none'}}">
+          <view class="ticket-text">
+            <text class="ticket-info">南昌万达海洋乐园平日/周末大学生门票,入园前均可购买</text>
+            <view class="prompt">
+              <text class="prompt-text">最早可订明日票</text>
+              <text class="prompt-text">有条件退</text>
+              <text class="icon-text">></text>
+            </view>
+          </view>
+          <view class="buy">
+            <view class="price">
+              <text class="charcter">￥</text><text class="price-num">99</text><text class="price-text">起</text>
+            </view>
+            <navigator>
+              <text class="btn">立即预订</text>
+            </navigator>
+          </view>
+        </view>
+      </view>
+      <view class="reservation-notes">
+        <view class="notes-title">预订须知</view>
+        <view class="person-treatment">门票优待政策
+          <text class="child">儿童 身高1.1米(不含)以下至少一个成人陪同 免费;身高1.1米(含)-1.5米(不含) 享优惠政策</text>
+          <text class="old-men">儿童 身高1.1米(不含)以下至少一个成人陪同 免费;身高1.1米(含)-1.5米(不含) 享优惠政策</text>
+          <text class="disabled">儿童 身高1.1米(不含)以下至少一个成人陪同 免费;身高1.1米(含)-1.5米(不含) 享优惠政策</text>
+          <text class="servicemen"></text>
+        </view>
+        <view class="open-date">开放时间
+          <text>9月1日-12月31日 周一至周五 全天: 10:00-19:00 最晚入园: 17:30</text>
+          <text>9月1日-12月31日 周一至周五 全天: 10:00-19:00 最晚入园: 17:30</text>
+          <text>9月1日-12月31日 周一至周五 全天: 10:00-19:00 最晚入园: 17:30</text>
+        </view>
+        <navigator url="">
+          <text class="see-more">查看更多</text>
+          <text class="see-icon">></text>
+        </navigator>
+      </view>
+    </view>
+  </view>
+</page>
