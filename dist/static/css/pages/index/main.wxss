@@ -1,0 +1,14 @@
+
+.title.data-v-0d53d50b {
+  color: #ed12a3;
+  text-align: center;
+}
+._ul.todos.data-v-0d53d50b {
+  margin: 40rpx;
+}
+._input.data-v-0d53d50b {
+  border: 4rpx solid #ed12a3;
+}
+.done.data-v-0d53d50b {
+  text-decoration: line-through;
+}

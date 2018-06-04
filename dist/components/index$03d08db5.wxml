@@ -1,0 +1,13 @@
+<template name="index$03d08db5">
+  <view class="_div data-v-0d53d50b mpvue-demo">
+    <view class="_p data-v-0d53d50b title">{{title}}</view>
+    <view class="_p data-v-0d53d50b">{{mytodo}}</view>
+    <input type="text" value="{{mytodo}}" bindinput="handleProxy" data-eventid="{{'0'}}" data-comkey="{{$k}}" class="_input data-v-0d53d50b" />
+    <button bindtap="handleProxy" data-eventid="{{'1'}}" data-comkey="{{$k}}" class="_button data-v-0d53d50b">加一条</button>
+    <button bindtap="handleProxy" data-eventid="{{'2'}}" data-comkey="{{$k}}" class="_button data-v-0d53d50b">清空</button>
+    <view class="_ul data-v-0d53d50b todos">
+      <view bindtap="handleProxy" data-eventid="{{'3-'+i}}" data-comkey="{{$k}}" wx:for="{{todos}}" wx:for-index="i" wx:for-item="todo" class="_li data-v-0d53d50b {{[todo.done ? 'done' : '']}}">{{todo.text}}</view>
+      <view class="_li data-v-0d53d50b">{{todoNum}}/{{todos.length}}</view>
+    </view>
+  </view>
+</template>
