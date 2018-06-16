@@ -1,0 +1,150 @@
+<!--pages/selectedTouristList/selectedTouristList.wxml-->
+<navigator url="/pages/detail/detail?title=1">
+  <view class="tourist-spot-info">    
+    <view class="tourist-spot-image">
+      <image class="tourst-image" src="/images/tourist/nanchangwandahangyangleyaun.jpg"></image>
+    </view>       
+    <view class="tourist-detail-info">
+      <view class="tourist-info-name">南昌万达海洋乐园</view>
+      <text class="evaluate-level">好，</text>
+      <text class="evaluate-score">4.3分</text>
+      <text class="consume-num"> 8000+人消费</text>
+      <view class="unique-feature">
+        <view class="feature">随买随用</view>
+        <view class="feature">亲子同乐</view>
+        <view class="feature">海豚海狮表演</view>
+        <view class="feature">公园游乐场</view>
+      </view>
+      <view class="price">￥<b>90</b>起</view>
+      <view class="tourist-location">万达茂/南昌</view>
+    </view>
+  </view>
+</navigator>
+<navigator url="/pages/detail/detail?title=1">
+  <view class="tourist-spot-info">    
+    <view class="tourist-spot-image">
+      <image class="tourst-image" src="/images/tourist/nanchangwandahangyangleyaun.jpg"></image>
+    </view>       
+    <view class="tourist-detail-info">
+      <view class="tourist-info-name">南昌万达海洋乐园</view>
+      <text class="evaluate-level">好，</text>
+      <text class="evaluate-score">4.3分</text>
+      <text class="consume-num"> 8000+人消费</text>
+      <view class="unique-feature">
+        <view class="feature">随买随用</view>
+        <view class="feature">亲子同乐</view>
+        <view class="feature">海豚海狮表演</view>
+        <view class="feature">公园游乐场</view>
+      </view>
+      <view class="price">￥<b>90</b>起</view>
+      <view class="tourist-location">万达茂/南昌</view>
+    </view>
+  </view>
+</navigator>
+<navigator url="/pages/detail/detail?title=1">
+  <view class="tourist-spot-info">    
+    <view class="tourist-spot-image">
+      <image class="tourst-image" src="/images/tourist/nanchangwandahangyangleyaun.jpg"></image>
+    </view>       
+    <view class="tourist-detail-info">
+      <view class="tourist-info-name">南昌万达海洋乐园</view>
+      <text class="evaluate-level">好，</text>
+      <text class="evaluate-score">4.3分</text>
+      <text class="consume-num"> 8000+人消费</text>
+      <view class="unique-feature">
+        <view class="feature">随买随用</view>
+        <view class="feature">亲子同乐</view>
+        <view class="feature">海豚海狮表演</view>
+        <view class="feature">公园游乐场</view>
+      </view>
+      <view class="price">￥<b>90</b>起</view>
+      <view class="tourist-location">万达茂/南昌</view>
+    </view>
+  </view>
+</navigator>
+<navigator url="/pages/detail/detail?title=1">
+  <view class="tourist-spot-info">    
+    <view class="tourist-spot-image">
+      <image class="tourst-image" src="/images/tourist/nanchangwandahangyangleyaun.jpg"></image>
+    </view>       
+    <view class="tourist-detail-info">
+      <view class="tourist-info-name">南昌万达海洋乐园</view>
+      <text class="evaluate-level">好，</text>
+      <text class="evaluate-score">4.3分</text>
+      <text class="consume-num"> 8000+人消费</text>
+      <view class="unique-feature">
+        <view class="feature">随买随用</view>
+        <view class="feature">亲子同乐</view>
+        <view class="feature">海豚海狮表演</view>
+        <view class="feature">公园游乐场</view>
+      </view>
+      <view class="price">￥<b>90</b>起</view>
+      <view class="tourist-location">万达茂/南昌</view>
+    </view>
+  </view>
+</navigator>
+<navigator url="/pages/detail/detail?title=1">
+  <view class="tourist-spot-info">    
+    <view class="tourist-spot-image">
+      <image class="tourst-image" src="/images/tourist/nanchangwandahangyangleyaun.jpg"></image>
+    </view>       
+    <view class="tourist-detail-info">
+      <view class="tourist-info-name">南昌万达海洋乐园</view>
+      <text class="evaluate-level">好，</text>
+      <text class="evaluate-score">4.3分</text>
+      <text class="consume-num"> 8000+人消费</text>
+      <view class="unique-feature">
+        <view class="feature">随买随用</view>
+        <view class="feature">亲子同乐</view>
+        <view class="feature">海豚海狮表演</view>
+        <view class="feature">公园游乐场</view>
+      </view>
+      <view class="price">￥<b>90</b>起</view>
+      <view class="tourist-location">万达茂/南昌</view>
+    </view>
+  </view>
+</navigator>
+<navigator url="/pages/detail/detail?title=1">
+  <view class="tourist-spot-info">    
+    <view class="tourist-spot-image">
+      <image class="tourst-image" src="/images/tourist/nanchangwandahangyangleyaun.jpg"></image>
+    </view>       
+    <view class="tourist-detail-info">
+      <view class="tourist-info-name">南昌万达海洋乐园</view>
+      <text class="evaluate-level">好，</text>
+      <text class="evaluate-score">4.3分</text>
+      <text class="consume-num"> 8000+人消费</text>
+      <view class="unique-feature">
+        <view class="feature">随买随用</view>
+        <view class="feature">亲子同乐</view>
+        <view class="feature">海豚海狮表演</view>
+        <view class="feature">公园游乐场</view>
+      </view>
+      <view class="price">￥<b>90</b>起</view>
+      <view class="tourist-location">万达茂/南昌</view>
+    </view>
+  </view>
+</navigator>
+<navigator url="/pages/detail/detail?title=1">
+  <view class="tourist-spot-info">    
+    <view class="tourist-spot-image">
+      <image class="tourst-image" src="/images/tourist/nanchangwandahangyangleyaun.jpg"></image>
+    </view>       
+    <view class="tourist-detail-info">
+      <view class="tourist-info-name">南昌万达海洋乐园</view>
+      <text class="evaluate-level">好，</text>
+      <text class="evaluate-score">4.3分</text>
+      <text class="consume-num"> 8000+人消费</text>
+      <view class="unique-feature">
+        <view class="feature">随买随用</view>
+        <view class="feature">亲子同乐</view>
+        <view class="feature">海豚海狮表演</view>
+        <view class="feature">公园游乐场</view>
+      </view>
+      <view class="price">￥<b>90</b>起</view>
+      <view class="tourist-location">万达茂/南昌</view>
+    </view>
+  </view>
+</navigator>
+<view class="to-end">没有其他景点了哦~~</view>
+    

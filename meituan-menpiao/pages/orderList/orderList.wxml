@@ -1,0 +1,115 @@
+<!--pages/orderList/orderList.wxml-->
+<view class="order-list">
+    <view class="bar">
+      <view class="order-bar ">
+        <text class="bar-text {{index===0?'on':''}}" data-index="0" bindtap="switchTab">门票</text>  
+      </view>
+      <view class="order-bar ">
+        <text class="bar-text {{index===1?'on':''}}" data-index="1" bindtap="switchTab">门票+酒店</text> 
+      </view>
+    </view>
+    <view class="order-detail " style="display:{{index===0?'block':'none'}}">
+      <view class="order-content">
+        <image class="comtent-img" src="/images/tourist/nanchangwandahangyangleyaun.jpg"></image>
+        <view class="content-text">
+          <view class="content-title">南昌万达海洋乐园平日/周末</view>
+          <view class="content-num">张数: 1</view>
+          <view class="content-num">总价: ￥99</view>
+        </view>
+        <view class="status">已取消</view>
+      </view>
+      <view class="order-content">
+        <image class="comtent-img" src="/images/tourist/nanchangwandahangyangleyaun.jpg"></image>
+        <view class="content-text">
+          <view class="content-title">南昌万达海洋乐园平日/周末</view>
+          <view class="content-num">张数: 1</view>
+          <view class="content-num">总价: ￥99</view>
+        </view>
+        <view class="status">已取消</view>
+      </view>
+      <view class="order-content">
+        <image class="comtent-img" src="/images/tourist/nanchangwandahangyangleyaun.jpg"></image>
+        <view class="content-text">
+          <view class="content-title">南昌万达海洋乐园平日/周末</view>
+          <view class="content-num">张数: 1</view>
+          <view class="content-num">总价: ￥99</view>
+        </view>
+        <view class="status">已取消</view>
+      </view>
+      <view class="order-content">
+        <image class="comtent-img" src="/images/tourist/nanchangwandahangyangleyaun.jpg"></image>
+        <view class="content-text">
+          <view class="content-title">南昌万达海洋乐园平日/周末</view>
+          <view class="content-num">张数: 1</view>
+          <view class="content-num">总价: ￥99</view>
+        </view>
+        <view class="status">已取消</view>
+      </view>
+      <view class="order-content">
+        <image class="comtent-img" src="/images/tourist/nanchangwandahangyangleyaun.jpg"></image>
+        <view class="content-text">
+          <view class="content-title">南昌万达海洋乐园平日/周末</view>
+          <view class="content-num">张数: 1</view>
+          <view class="content-num">总价: ￥99</view>
+        </view>
+        <view class="status">已取消</view>
+      </view>
+      <view class="order-content">
+        <image class="comtent-img" src="/images/tourist/nanchangwandahangyangleyaun.jpg"></image>
+        <view class="content-text">
+          <view class="content-title">南昌万达海洋乐园平日/周末</view>
+          <view class="content-num">张数: 1</view>
+          <view class="content-num">总价: ￥99</view>
+        </view>
+        <view class="status">已取消</view>
+      </view>
+      <view class="order-content">
+        <image class="comtent-img" src="/images/tourist/nanchangwandahangyangleyaun.jpg"></image>
+        <view class="content-text">
+          <view class="content-title">南昌万达海洋乐园平日/周末</view>
+          <view class="content-num">张数: 1</view>
+          <view class="content-num">总价: ￥99</view>
+        </view>
+        <view class="status">已取消</view>
+      </view>
+      <view class="order-content">
+        <image class="comtent-img" src="/images/tourist/nanchangwandahangyangleyaun.jpg"></image>
+        <view class="content-text">
+          <view class="content-title">南昌万达海洋乐园平日/周末</view>
+          <view class="content-num">张数: 1</view>
+          <view class="content-num">总价: ￥99</view>
+        </view>
+        <view class="status">已取消</view>
+      </view>
+      <view class="order-content">
+        <image class="comtent-img" src="/images/tourist/nanchangwandahangyangleyaun.jpg"></image>
+        <view class="content-text">
+          <view class="content-title">南昌万达海洋乐园平日/周末</view>
+          <view class="content-num">张数: 1</view>
+          <view class="content-num">总价: ￥99</view>
+        </view>
+        <view class="status">已取消</view>
+      </view>
+      <view class="order-content">
+        <image class="comtent-img" src="/images/tourist/nanchangwandahangyangleyaun.jpg"></image>
+        <view class="content-text">
+          <view class="content-title">南昌万达海洋乐园平日/周末</view>
+          <view class="content-num">张数: 1</view>
+          <view class="content-num">总价: ￥99</view>
+        </view>
+        <view class="status">已取消</view>
+      </view>
+      
+
+
+    </view>
+    <view class="order-detail " style="display:{{index===1?'block':'none'}}">
+      <view class="no-order">
+        <image src="/images/icons/icon_no_order.png"></image>
+        <view class="no-order-text">还没有订单哦~~</view>
+        <view class="submit">去下单</view>
+      </view>
+
+
+  </view>
+</view>

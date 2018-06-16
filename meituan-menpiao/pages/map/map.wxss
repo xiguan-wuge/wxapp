@@ -1,0 +1,61 @@
+/* pages/map/map.wxss */
+.container {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  padding: 0;
+}
+#ofoMap{
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height:100%;
+  z-index: 1;
+}
+.my-position{
+  z-index: 1;
+  position: absolute;
+  right:35rpx;
+  bottom:220rpx;
+  width:100rpx;
+  height:100rpx
+}
+.footer{
+  width: 100%;
+  height: 155rpx;
+  background-color: #fff;
+  display: flex;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+}
+.footer .tourist-name{
+  flex: 1;
+  height: 155rpx;
+  line-height: 100rpx;
+  margin-left: 30rpx;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-size: 45rpx;
+  color: #000;
+   /* z-index: 2; */
+}
+.footer .icon-prompt{
+  width: 155rpx;
+  height: 155rpx;
+  position: relative;
+   /* z-index: 3; */
+}
+.footer .icon-prompt cover-image{
+  width: 111rpx;
+  height:111rpx;
+  border-radius: 50%;
+  position: absolute;
+  top: 15%;
+  left: 15%;
+}

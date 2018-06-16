@@ -1,0 +1,302 @@
+/* pages/order/order.wxss */
+page{
+  background-color: #f6f6f6;
+}
+.container{
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  align-items: left;
+  /* background-color: #e1e1e1; */
+}
+.view{
+  padding: 0;
+  margin: 0;
+}
+.common{
+  width: 96%;
+  background-color: #fff;
+  padding: 20rpx 20rpx 0 20rpx;
+  border-bottom: 15rpx solid #f6f6f6;
+}
+common.use-date{
+  /* background-color: red; */
+}
+.ticket-total-info .ticket-info .text-title{
+ 
+  font-size: 38rpx;
+  color: #000;
+  font-weight: bold; 
+  width: 100%;
+}
+.ticket-total-info .ticket-info .ticket-supplement{
+  margin-top: 10rpx;
+  font-size: 30rpx;
+  color: #586c94;
+}
+.ticket-total-info .ticket-info .text-prompt{
+  display: inline-block;
+  font-size: 27rpx;
+  color: #586c94;
+  height: 60rpx;
+  margin-right: 30rpx;
+}
+.ticket-total-info .ticket-info .prom-icon{
+  /* display: inline-block; */
+  vertical-align: middle;
+  width: 45rpx;
+  height: 45rpx;
+}
+.date-num{
+  width: 96%;
+  /* background-color: green; */
+  padding: 20rpx 20rpx;
+  border-bottom: 15rpx solid #f6f6f6;
+  
+}
+.date-num .use-date{
+  border-bottom: 1rpx solid #e1e1e1;
+}
+.date-num .use-date .date-text{
+  height: 90rpx;
+  width: 150rpx;
+  text-align: center;
+  line-height: 90rpx;
+  font-size: 35rpx;
+  color: #000;
+  /* background: yellow; */
+  display: inline-block;
+  margin-right: 100rpx;
+}
+.date-num .use-date .date-box{
+  height: 90rpx;
+  width: 160rpx;
+  border: 1rpx solid #ccc;
+  color: #000; 
+  text-align: center;
+  display: inline-block;
+  font-size: 25rpx;
+  margin-left: 10rpx;
+  box-sizing: border-box;
+ /* align-items: center; */
+}
+.date-num .use-date .date-box.on{
+  color: #007acc;
+  border-color: #007acc;
+}
+.date-num .use-date .date-box .date-date{
+  height: 45rpx;
+  line-height: 45rpx;
+}
+.date-num .use-date .date-box .date-price{
+   height: 45rpx;
+  line-height: 45rpx;
+}
+
+.date-num .use-date .date-more{
+  height: 90rpx;
+  width: 90rpx;
+  border: 1rpx solid #ccc;
+  color: #000; 
+  text-align: center;
+  display: inline-block;
+  font-size: 25rpx;
+  letter-spacing: 8rpx;
+  margin-left: 10rpx;
+}
+
+.date-num .use-date .date-more .see-more-text{
+  height: 45rpx;
+  line-height: 45rpx;
+}
+.date-num .date-prompt{
+  height: 70rpx;
+  line-height: 70rpx;
+  font-size: 30rpx;
+  color: #272727;
+}
+.date-num .ticket-num{
+  position:relative;
+}
+.date-num .ticket-num .buy-num-text{
+  font-size:35rpx ;
+  display: inline-block;
+  width: 160rpx;
+  height: 90rpx;
+  line-height: 90rpx;
+  margin-right: 333rpx;
+}
+.date-num .ticket-num .minus-icon{
+  display: inline-block;
+  width: 60rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  border: 1rpx solid #ccc;
+  font-size: 30rpx;
+  text-align: center;
+  position: absolute;
+  top: 20rpx;
+  right: 163rpx;
+}
+.date-num .ticket-num .plus-icon{
+  display: inline-block;
+  width: 60rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  border: 1rpx solid #ccc;
+  font-size: 30rpx;
+  text-align: center;
+  position: absolute;
+  top: 20rpx;
+  right: 3rpx;
+}
+.date-num .ticket-num .minus-icon .icon{
+  display: inline-block;
+  width: 35rpx;
+  height: 35rpx;
+  vertical-align: middle;
+  
+}
+.date-num .ticket-num .plus-icon .icon{
+  display: inline-block;
+  width: 35rpx;
+  height: 35rpx;
+  vertical-align: middle;
+  /* color: #4c4f5d; */
+}
+.date-num .ticket-num .buy-num{
+  display: inline-block;
+  width: 100rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  border-top:1rpx solid #ccc;
+  border-bottom:1rpx solid #ccc;
+  text-align: center;
+  font-size: 34rpx;
+  color: #000;
+  position: absolute;
+  top: 20rpx;
+  right: 66rpx;
+}
+/* .player-total-info{
+  
+} */
+.colonm{
+  border-bottom: 1rpx solid #e1e1e1;
+  /* padding-bottom: 15rpx; */
+}
+.player-total-info .player-text{ 
+  border-bottom: 1rpx solid #e1e1e1;
+  height: 100rpx;
+  line-height: 100rpx;
+  /* padding-bottom: 15rpx; */
+}
+.player-total-info .player-text .player-info{
+  color: #000;
+  font-size: 35rpx;
+  margin-right: 321rpx;
+  font-weight: bold;
+}
+.player-total-info .player-text-info{
+  line-height: 100%;
+  display: inline-block;
+  width: 180rpx;  
+}
+.player-total-info .player-input{
+  display: inline-block;
+  /* background-color: yellow; */
+  position: absolute;
+  top: 26rpx;
+}
+.player-total-info .player-name{
+  box-sizing: border-box;
+  line-height: 100rpx;
+  position: relative;
+}
+.icon-dis{
+  width: 40rpx;
+  height: 40rpx;
+  vertical-align: middle;
+}
+.discount-total-info .discount-text{
+  height: 100rpx;
+  line-height: 100rpx;
+}
+.discount-total-info .discount-info{
+  height: 100rpx;
+  line-height: 100rpx;
+}
+.discount-total-info .discount-info .discount-title{
+  height: 80rpx;
+  line-height: 80rpx;
+  font-size: 35rpx;
+  margin-left: 15rpx;
+}
+.discount-total-info .discount-info .discount-prompt{
+  height: 100rpx;
+  line-height: 100rpx;
+  font-size: 30rpx;
+  float: right;
+  margin-right: 10rpx;
+}
+.buy-bar{
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 5;
+  /* background-color: green; */
+}
+.buy-bar .total-price-box{
+  display: inline-block;
+  width: 440rpx;
+  height: 100rpx;
+  line-height: 100rpx;
+  font-size: 40rpx;
+  float: left;
+  position: absolute;
+  border-top: 1rpx solid #ccc;
+  background-color: yellow;
+}
+.buy-bar .total-price-box .price-charater{
+  color: red;
+  font-size: 27rpx;
+  margin-left: 20rpx;
+}
+.buy-bar .total-price-box .price-num{
+  color: red;
+  font-size: 40rpx;
+  font-weight: bold;
+}
+.buy-bar .total-price-box .price-more{
+  display: inline-block;
+  /* background-color: yellow; */
+  width: 50rpx;
+  height: 50rpx;
+  float: right;
+  margin-top: 35rpx;
+  margin-right: 30rpx;
+}
+.buy-bar .total-price-box .price-more .half-box{
+  display: inline-block;
+  width: 15rpx;
+  height: 15rpx;
+  border-top: 2rpx solid #586c94;
+  border-left: 2rpx solid #586c94;
+  float: right;
+  margin-top: 25%;
+  margin-right: 25%;
+  transform:rotate(45deg);
+  /* transform:rotate(225deg); */
+}
+.buy-bar .summit{
+  display: inline-block;
+  width: 312rpx;
+  height: 100rpx;
+  background-color: red;
+  color: #fff;
+  font-size: 40rpx;
+  border-radius: 0;
+  float: right;   
+}

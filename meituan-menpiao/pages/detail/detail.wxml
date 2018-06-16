@@ -1,0 +1,329 @@
+<!--pages/detail/detail.wxml-->
+<scroll-view scroll-y scroll-into-view="{{toView}}" scroll-with-animation="true">
+  <view class="container">
+    <view class="header" id="header">
+      <image src="{{touristSpot.imgSrc}}">
+      </image>
+      <text class="tourist-spot-name">{{touristSpot.name}}</text>
+      <!-- <text>名字：{{title}}  {{goods.name}} </text> -->
+      <!-- <p class="ss">hu{{goods.name}}</p> -->
+      <text class="stars">
+        <text class="rating-stars">
+          <text class="rating-star rating-star-small-full"></text>
+          <text class="rating-star rating-star-small-full"></text>
+          <text class="rating-star rating-star-small-full"></text>
+          <text class="rating-star rating-star-small-full"></text>
+          <text class="rating-star rating-star-small-gray"></text>
+        </text>
+      </text>
+      <navigator url="/pages/index/index" >
+        <text class="tourist-spot-intro">景点介绍 ></text>
+      </navigator>
+      <navigator url="/pages/map/map?name={{locationTemp}}&latitude={{touristSpot.latitude}}&longitude={{touristSpot.longitude}}" hover-class="none">
+        <view class="location-detail">
+          <image class="location-icon" src="/images/icons/icon_location.png"></image>
+          <text class="location-text">{{touristSpot.location}}</text>
+          <text class="location-to">></text>
+        </view>
+      </navigator>
+    </view>
+    <view class="content">
+      <view class="title" >
+        <text class="entrance-ticket">门票</text>
+        <navigator url="/pages/index/index" hover-class="none">
+          <text class="notice" bindtap="switchCategory">预订须知</text>
+        </navigator> 
+      </view>
+      <text class="recommend">美团推荐</text>
+      <view class="buy-ticket" wx:for="{{recomTicket.ticketInfomation}}" wx:key="{{item.id}}"> 
+        <view class="ticket-text" >
+          <text class="ticket-info">{{item.ticketTitle}}</text>
+          <view class="prompt">
+            <text class="prompt-text" wx:for="{{item.prompt}}" wx:key="{{intic}}" wx:for-item="promptt">{{promptt.promptText}}</text>
+            <!-- <text class="prompt-text">有条件退</text> -->
+            <text class="icon-text">></text>
+          </view>
+        </view>
+        <view class="buy">
+          <view class="price">
+            <text class="charcter">￥</text><text class="price-num">{{item.price}}</text><text class="price-text">起</text>
+          </view>
+          <navigator url="/pages/order/order" hover-class="none">
+            <text class="btn">立即预订</text>
+          </navigator>
+        </view>
+      </view>
+      <!-- <view class="buy-ticket">
+        <view class="ticket-text">
+          <text class="ticket-info">南昌万达海洋乐园平日/周末大学生门票,入园前均可购买</text>
+          <view class="prompt">
+            <text class="prompt-text">最早可订明日票</text>
+            <text class="prompt-text">有条件退</text>
+            <text class="icon-text">></text>
+          </view>
+        </view>
+        <view class="buy">
+          <view class="price">
+            <text class="charcter">￥</text><text class="price-num">99</text><text class="price-text">起</text>
+          </view>
+          <navigator>
+            <text class="btn">立即预订</text>
+          </navigator>
+        </view>
+      </view>
+      <view class="buy-ticket">
+        <view class="ticket-text">
+          <text class="ticket-info">南昌万达海洋乐园平日/周末大学生门票,入园前均可购买</text>
+          <view class="prompt">
+            <text class="prompt-text">最早可订明日票</text>
+            <text class="prompt-text">有条件退</text>
+            <text class="icon-text">></text>
+          </view>
+        </view>
+        <view class="buy">
+          <view class="price">
+            <text class="charcter">￥</text><text class="price-num">99</text><text class="price-text">起</text>
+          </view>
+          <navigator>
+            <text class="btn">立即预订</text>
+          </navigator>
+        </view>
+      </view>
+      <view class="buy-ticket">
+        <view class="ticket-text">
+          <text class="ticket-info">南昌万达海洋乐园平日/周末大学生门票,入园前均可购买</text>
+          <view class="prompt">
+            <text class="prompt-text">最早可订明日票</text>
+            <text class="prompt-text">有条件退</text>
+            <text class="icon-text">></text>
+          </view>
+        </view>
+        <view class="buy">
+          <view class="price">
+            <text class="charcter">￥</text><text class="price-num">99</text><text class="price-text">起</text>
+          </view>
+          <navigator>
+            <text class="btn">立即预订</text>
+          </navigator>
+        </view>
+      </view> -->
+      <view class="ticket-category" wx:for="{{ticketCategoryInfo.ticketCategoryInformation}}" wx:key="{{item.id}}">
+        <view class="ticket-name">{{item.ticketTotalName}}</view>
+        <view class="ticket-date" wx:for="{{item.tickeTotalInfo}}" wx:key="{{index}}"    wx:for-item="ticketIn" bindtap="showOrHide">
+          <view class="ticket-info">{{ticketIn.ticketInfo}}</view>
+          <view class="ticket-price">
+            <view class="now-price">
+              <text class="character">￥</text>
+              <text class="price-num">{{ticketIn.nowPrice}}</text>
+              <text class="price-text">起</text>
+              <text class="show-hide" bindtap="showOrHide">></text>
+            </view>
+            <view class="old-price">￥{{ticketIn.oldPrice}}</view>
+          </view>
+          <!-- <view class="buy-ticket" >
+            <view class="ticket-text">
+              <text class="ticket-info">南昌万达海洋乐园平日/周末大学生门票,入园前均可购买</text>
+              <view class="prompt">
+                <text class="prompt-text">最早可订明日票</text>
+                <text class="prompt-text">有条件退</text>
+                <text class="icon-text">></text>
+              </view>
+            </view>
+            <view class="buy">
+              <view class="price">
+                <text class="charcter">￥</text><text class="price-num">99</text><text class="price-text">起</text>
+              </view>
+              <navigator>
+                <text class="btn">立即预订</text>
+              </navigator>
+            </view>
+          </view> -->
+        </view>
+        
+        <!-- <view class="ticket-date">
+          <view class="ticket-info">平日票</view>
+          <view class="ticket-price">
+            <view class="now-price">
+              <text class="character">￥</text>
+              <text class="price-num">140</text>
+              <text class="price-text">起</text>
+              <text class="show-hide" bindtap="showOrHide">></text>
+            </view>
+            <view class="old-price">￥150</view>
+          </view>
+        </view> -->
+        <!-- <view class="buy-ticket" style="display:{{show_or_hide?'block':'none'}}">
+          <view class="ticket-text">
+            <text class="ticket-info">南昌万达海洋乐园平日/周末大学生门票,入园前均可购买</text>
+            <view class="prompt">
+              <text class="prompt-text">最早可订明日票</text>
+              <text class="prompt-text">有条件退</text>
+              <text class="icon-text">></text>
+            </view>
+          </view>
+          <view class="buy">
+            <view class="price">
+              <text class="charcter">￥</text><text class="price-num">99</text><text class="price-text">起</text>
+            </view>
+            <navigator>
+              <text class="btn">立即预订</text>
+            </navigator>
+          </view>
+        </view> -->
+      </view>
+      <!-- <view class="ticket-category">
+        <view class="ticket-name">成人票</view>
+        <view class="ticket-date">
+          <view class="ticket-info">平日票</view>
+          <view class="ticket-price">
+            <view class="now-price" bindtap="showOrHide">
+              <text class="character">￥</text>
+              <text class="price-num">140</text>
+              <text class="price-text">起</text>
+              <text class="show-hide">></text>
+            </view>
+            <view class="old-price">￥150</view>
+          </view>
+        </view>
+        <view class="buy-ticket" style="display:{{showDetail?'block':'none'}};background-color:{{showDetail?'#f0f5f6':'#fff'}}">
+          <view class="ticket-text">
+            <text class="ticket-info">南昌万达海洋乐园平日/周末大学生门票,入园前均可购买</text>
+            <view class="prompt">
+              <text class="prompt-text">最早可订明日票</text>
+              <text class="prompt-text">有条件退</text>
+              <text class="icon-text">></text>
+            </view>
+          </view>
+          <view class="buy">
+            <view class="price">
+              <text class="charcter">￥</text><text class="price-num">99</text><text class="price-text">起</text>
+            </view>
+            <navigator>
+              <text class="btn">立即预订</text>
+            </navigator>
+          </view>
+        </view>
+      </view> -->
+      <!-- <view class="ticket-category">
+        <view class="ticket-name">成人票</view>
+        <view class="ticket-date">
+          <view class="ticket-info">平日票</view>
+          <view class="ticket-price">
+            <view class="now-price">
+              <text class="character">￥</text> 
+              <text class="price-num">140</text>
+              <text class="price-text">起</text>
+              <text class="show-hide" bindtap="showOrHide">></text>
+            </view>
+            <view class="old-price">￥150</view>
+          </view>
+        </view>
+        <view class="buy-ticket" style="display:{{show_or_hide?'block':'none'}}">
+          <view class="ticket-text">
+            <text class="ticket-info">南昌万达海洋乐园平日/周末大学生门票,入园前均可购买</text>
+            <view class="prompt">
+              <text class="prompt-text">最早可订明日票</text>
+              <text class="prompt-text">有条件退</text>
+              <text class="icon-text">></text>
+            </view>
+          </view>
+          <view class="buy">
+            <view class="price">
+              <text class="charcter">￥</text><text class="price-num">99</text><text class="price-text">起</text>
+            </view>
+            <navigator>
+              <text class="btn">立即预订</text>
+            </navigator>
+          </view>
+        </view>
+      </view> -->
+      <view class="reservation-notes" id="reservationNotes" >
+        <view class="notes-title">预订须知</view>
+        <view class="person-treatment">门票优待政策
+          <text class="child">儿童 身高1.1米(不含)以下至少一个成人陪同 免费;身高1.1米(含)-1.5米(不含) 享优惠政策</text>
+          <text class="old-men">儿童 身高1.1米(不含)以下至少一个成人陪同 免费;身高1.1米(含)-1.5米(不含) 享优惠政策</text>
+          <text class="disabled">儿童 身高1.1米(不含)以下至少一个成人陪同 免费;身高1.1米(含)-1.5米(不含) 享优惠政策</text>
+          <text class="servicemen"></text>
+        </view>
+        <view class="open-date">开放时间
+          <text>9月1日-12月31日 周一至周五 全天: 10:00-19:00 最晚入园: 17:30</text>
+          <text>9月1日-12月31日 周一至周五 全天: 10:00-19:00 最晚入园: 17:30</text>
+          <text>9月1日-12月31日 周一至周五 全天: 10:00-19:00 最晚入园: 17:30</text>
+        </view>
+        <navigator url="/pages/index/index" hover-class="none">
+          <text class="see-more">查看更多</text>
+          <text class="see-icon">></text>
+        </navigator>
+      </view>
+      <view class="netizen-comment-list">
+        <text class="comment-title">网友点评</text>
+        <text class="left-character">(</text>
+        <text class="comment-num">2364</text>
+        <text class="right-character">)</text>
+        <view class="netizen-list">
+          <navigator url="/pages/index/index" class="netizen-list-to" hover-class="none">
+            <view class="avatar">
+              <image src="/images/comments/c1-1.jpg" class="avatar-img"></image>
+            </view>
+            <view class="comment-info">
+              <!-- <view class="total-comment"> -->
+                <text class="netizen-name">q5769620933</text>
+                <text class="stars locate">
+                  <text class="rating-stars">
+                    <text class="rating-star rating-star-small-full"></text>
+                    <text class="rating-star rating-star-small-full"></text>
+                    <text class="rating-star rating-star-small-full"></text>
+                    <text class="rating-star rating-star-small-full"></text>
+                    <text class="rating-star rating-star-small-gray"></text>
+                  </text>
+                </text>
+              <!-- </view> -->
+              <textarea name="comment-text" id="comment-text">整体四个两层的展馆，有点特色，旁听到这次审查后会把中间的大展柜打通成一个矩形的圆柱体玻璃展柜，这样大家可以围着展柜观看演出和鱼类</textarea>
+              <view class="comment-images">
+                <image src="/images/comments/c1-4.jpg" class="com-img"/>
+                <image src="/images/comments/c1-4.jpg" class="com-img"/>
+                <image src="/images/comments/c1-4.jpg" class="com-img"/>
+                <image src="/images/comments/c1-4.jpg" class="com-img"/>
+              </view>
+              <text class="browsed-num">浏览 54468</text>
+              <text class="comment-date">2018-05-21</text>
+            </view>
+          </navigator>
+        </view>
+        <view class="netizen-list">
+          <navigator url="/pages/index/index" class="netizen-list-to" hover-class="none">
+            <view class="avatar">
+              <image src="/images/comments/c1-1.jpg" class="avatar-img"></image>
+            </view>
+            <view class="comment-info">
+              
+                <text class="netizen-name">q5769620933</text>
+                <text class="stars locate">
+                  <text class="rating-stars">
+                    <text class="rating-star rating-star-small-full"></text>
+                    <text class="rating-star rating-star-small-full"></text>
+                    <text class="rating-star rating-star-small-full"></text>
+                    <text class="rating-star rating-star-small-full"></text>
+                    <text class="rating-star rating-star-small-gray"></text>
+                  </text>
+                </text>
+              
+              <textarea name="comment-text" id="comment-text">里面鱼的种类很多，目不暇接，和宝宝在里面完了大半天，非常开心，重点推荐里面的明星节目：海豚表演！</textarea>
+              <view class="comment-images">
+                <image src="/images/comments/c1-4.jpg" class="com-img"/>
+                <image src="/images/comments/c1-4.jpg" class="com-img"/>
+                <image src="/images/comments/c1-4.jpg" class="com-img"/>
+                <image src="/images/comments/c1-4.jpg" class="com-img"/>
+              </view>
+              <text class="browsed-num">浏览 54468</text>
+              <text class="comment-date">2018-05-21</text>
+            </view>
+          </navigator>
+        </view>
+        <navigator url="/pages/index/index" class="all-comments" hover-class="none">
+          <text class="see-all-comments">查看全部 ></text>
+        </navigator>
+      </view>
+    </view>
+  </view>
+</scroll-view >

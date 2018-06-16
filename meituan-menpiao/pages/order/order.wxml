@@ -1,0 +1,79 @@
+<!--pages/order/order.wxml-->
+<page>
+  <view class="container">
+    <view class="ticket-total-info common">
+      <view class="ticket-info">
+        <view class="text-title">南昌万达海洋游乐园平日周末大学生门票</view>
+        <view class="ticket-supplement">可随时购买使用</view> 
+        <image src="/images/icons/M-dui.png" class="prom-icon"/>
+        <view class="text-prompt">入园保障</view>
+        <image src="/images/icons/M-dui.png" class="prom-icon"/>
+        <text class="text-prompt">有条件退</text>
+      </view>
+    </view>
+    <view class="date-num common">
+      <view class="use-date">
+        <view class="date-text">使用日期</view>
+        <view class="date-box {{index===0?'on':''}}" data-index="0" bindtap="switchTab" >
+          <view class="date-date">2018-06-07</view>
+          <view class="date-price">￥99</view>  
+        </view>
+        <view class="date-box {{index===1?'on':''}}" data-index="1" bindtap="switchTab">
+          <view class="date-date">2018-06-08</view>
+          <view class="date-price">￥99</view>
+        </view>
+        <view class="date-more">
+          <text class="see-more-text">查看更多</text>
+          <text class="see-more-charater"></text>
+        </view>
+        <text class="date-prompt">2018年6月8日使用有效</text>
+      </view>
+      <view class="ticket-num">
+        <text class="buy-num-text">预订数量 :</text>
+        <view class="minus-icon" hover-class="none">
+          <image id="minusIcon" class="icon" src="{{minusIconPath}}" alt="" bindtap="subtractNum"/>
+        </view>
+        <view class="buy-num" >{{ticketNum}}</view>
+        <view class="plus-icon" bindtap="addNum" hover-class="none">
+          <image class="icon" src="/images/icons/icon_plus_color.png" alt=""/>
+        </view>
+      </view>
+    </view>
+    <view class="player-total-info common">
+      <view class="player-text colonm">
+        <!-- <navigator url=""> -->
+          <text class="player-info">游玩人</text>
+          <text class="choose-player">点击选择游玩人</text>
+          <text class="more-icon">></text>
+        <!-- </navigator>         -->
+      </view>      
+      <view class="player-name colonm">
+        <text class="player-text-info">姓名</text>
+        <input type="text" class="player-input" value="{{nameInput}}" bindinput="nameInput"></input>
+      </view>   
+      <view class="player-name colonm">
+        <text class="player-text-info">手机号</text>
+        <input type="text" class="player-input" value="{{telInput}}" bindinput="telInput"></input>
+      </view>
+    </view>
+    <view class="discount-total-info common">
+      <view class="discount-text colonm">优惠</view>
+      <view class="discount-info colonm">
+        <image src="/images/icons/icon_quan.png" class="icon-dis"></image>
+        <text class="discount-title">抵用券</text>
+        <text class="discount-prompt">暂无抵用券</text>
+      </view>
+      
+    </view>
+    <view class="buy-bar">
+      <view class="total-price-box">
+        <text class="price-charater">￥</text>
+        <text class="price-num">{{totalPrice}}</text>
+        <text class="price-more">
+          <text class="half-box"></text>
+        </text>
+      </view>
+      <button class="summit" bindtap="orderSubmit" hover-class="none">提交订单</button>
+    </view>
+  </view>
+</page>

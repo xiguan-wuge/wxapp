@@ -1,0 +1,11 @@
+{
+  
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "订单列表",
+    "navigationBarTextSize": "50rpx",
+    "navigationBarTextStyle": "black",
+    "backgrounfColor": "#f0f5f6",
+    "enablePullDownRefresh": true
+  
+}

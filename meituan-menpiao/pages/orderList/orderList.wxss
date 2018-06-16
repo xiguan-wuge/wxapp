@@ -1,0 +1,107 @@
+/* pages/orderList/orderList.wxss */
+page{
+  background-color: #f2f6fa;
+}
+.order-list{
+  width: 100%;
+  height: 100%;
+  background-color: #f2f6fa;
+}
+.order-bar{
+  display: inline-block;
+  text-align: center;
+  width: 50%;
+  background-color: #fff;
+  
+}
+
+.order-bar .bar-text{
+  display: inline-block;
+  height: 90rpx;
+  line-height: 90rpx;
+  /* border-bottom: 1rpx solid #ededed; */
+  box-sizing: border-box;
+  text-align: center;
+  color: #000;
+}
+.bar-text.on{
+  /* color: #bcaa8a; */
+  border-bottom: 5rpx solid #007acc;
+  }
+.order-detail{
+  width: 100%;
+  height: 100%;
+  background-color: #f0f5f6;
+}
+.order-content{
+  width: 100%;
+  margin-top: 20rpx;
+  display: flex;
+  background-color: #fff;
+}
+.comtent-img{
+  width: 150rpx;
+  height: 150rpx;
+  margin: 20rpx;
+  /* background-color: yellow; */
+}
+.content-text{
+  height: 150rpx;
+  width: 400rpx;
+  margin-top: 20rpx;
+  /* background-color: yellow; */
+}
+.status{
+  height: 150rpx;
+  width: 115rpx;
+  margin: 20rpx;
+  font-size: 35rpx;
+  color: #333;
+  line-height: 70rpx;
+  text-align: center;
+  /* justify-content: center; */
+  /* background-color: yellow; */
+}
+.content-title{
+  height: 60rpx;
+  line-height: 60rpx;
+  font-size: 40rpx;
+  font-weight: bold;
+  color: #000;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.content-num{
+  height: 45rpx;
+  line-height: 45rpx;
+  font-size: 30rpx;
+  color: #333;
+}
+.order-detail .no-order{
+  margin: 40% 20%;
+  /* background-color: yellow; */
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+.order-detail .no-order image{
+  width: 160rpx;
+  height: 160rpx;
+}
+.order-detail .no-order .submit{
+  width: 290rpx;
+  height: 80rpx;
+  background-color: #007acc;
+  font-size: 35rpx;
+  text-align: center;
+  line-height: 80rpx;
+  color: #fff; 
+  margin-left: 17%;
+  margin-top: 30rpx;
+}
+.order-detail .no-order .no-order-text{
+  font-size: 30rpx;
+  color:#000;
+}

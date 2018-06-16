@@ -1,0 +1,15 @@
+<!--pages/map/map.wxml-->
+<view class="container">    
+    <!-- 经纬度  scale缩放 -->
+    <map id="ofoMap" longitude="{{longitude}}" latitude="{{latitude}}" scale="{{scale}}"
+     markers="{{markers}}"
+    />    
+    <cover-image class="my-position" src="/images/location.png" bindtap="toMyPosition"></cover-image>
+    
+</view>
+<cover-view class="footer">
+    <cover-view class="tourist-name">{{touristNameInfo}}</cover-view>
+    <cover-view class="icon-prompt">
+        <cover-image class="map-image" src="/images/icons/icon_map.jpg"></cover-image>
+    </cover-view>
+</cover-view>

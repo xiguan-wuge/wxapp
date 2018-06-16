@@ -1,0 +1,81 @@
+<!--pages/voucher/voucher.wxml-->
+<view class="voucher-info">
+  <view class="content">
+    <view class="image">
+    <text class="icon-character">￥</text>
+    <text class="money-num">10</text>
+    <view class="voucer-name">抵用券</view>
+  </view>
+  <view class="voucher-text">
+    <view class="voucher-title">10元多类目通用代金券q券券券券wwwww</view>
+    <view class="date">有效期 2018-01-24 - 2018-01-26</view>
+    <view class="date-prompt">已过期134天</view>
+  </view>
+  </view>
+  
+  <text class="prompt">满100元可用、限最新版客户端使用</text>
+</view>
+<view class="voucher-info">
+  <view class="content">
+    <view class="image">
+    <text class="icon-character">￥</text>
+    <text class="money-num">10</text>
+    <view class="voucer-name">抵用券</view>
+  </view>
+  <view class="voucher-text">
+    <view class="voucher-title">10元多类目通用代金券q券券券券wwwww</view>
+    <view class="date">有效期 2018-01-24 - 2018-01-26</view>
+    <view class="date-prompt">已过期134天</view>
+  </view>
+  </view>
+  
+  <text class="prompt">满100元可用、限最新版客户端使用</text>
+</view>
+<view class="voucher-info">
+  <view class="content">
+    <view class="image">
+    <text class="icon-character">￥</text>
+    <text class="money-num">10</text>
+    <view class="voucer-name">抵用券</view>
+  </view>
+  <view class="voucher-text">
+    <view class="voucher-title">10元多类目通用代金券q券券券券wwwww</view>
+    <view class="date">有效期 2018-01-24 - 2018-01-26</view>
+    <view class="date-prompt">已过期134天</view>
+  </view>
+  </view>
+  
+  <text class="prompt">满100元可用、限最新版客户端使用</text>
+</view>
+<view class="voucher-info">
+  <view class="content">
+    <view class="image">
+    <text class="icon-character">￥</text>
+    <text class="money-num">10</text>
+    <view class="voucer-name">抵用券</view>
+  </view>
+  <view class="voucher-text">
+    <view class="voucher-title">10元多类目通用代金券q券券券券wwwww</view>
+    <view class="date">有效期 2018-01-24 - 2018-01-26</view>
+    <view class="date-prompt">已过期134天</view>
+  </view>
+  </view>
+  
+  <text class="prompt">满100元可用、限最新版客户端使用</text>
+</view>
+<view class="voucher-info">
+  <view class="content">
+    <view class="image">
+    <text class="icon-character">￥</text>
+    <text class="money-num">10</text>
+    <view class="voucer-name">抵用券</view>
+  </view>
+  <view class="voucher-text">
+    <view class="voucher-title">10元多类目通用代金券q券券券券wwwww</view>
+    <view class="date">有效期 2018-01-24 - 2018-01-26</view>
+    <view class="date-prompt">已过期134天</view>
+  </view>
+  </view>
+  
+  <text class="prompt">满100元可用、限最新版客户端使用</text>
+</view>

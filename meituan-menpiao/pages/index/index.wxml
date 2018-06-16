@@ -1,0 +1,79 @@
+<!--index.wxml-->
+<view class="userinfo {{showUserInfo?'':'hide'}}">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+</view>
+
+<view class="container {{showUserInfo?'hide':''}}" >
+<!-- <view class="container">   -->
+  <view class="header">
+    <view class="header-location">
+      <text class="location-name" bindtap="locationChoose">{{place}} </text>
+      <text class="location-icon"></text>
+    </view>
+    <view class="header-search">
+      <image class="header-search-icon" src="/images/icons/icon_search.png"/>
+      <text class="header-search-text">景点/目的地</text>
+    </view>
+  </view>
+    <view class="categoryList">
+      <!-- 循环输出景点类别 -->
+     <view class="category-info" wx:for="{{categoryInfo}}" wx:key="{{item.id}}" bindtap="toSelected">
+        <image class="category-image" src="{{item.image}}"></image>
+       <view class="category-text">{{item.title}}</view>
+       
+     </view>
+     <!-- <view class="category-info">
+       <image class="category-image" src="/images/icons/icon-google.png"></image>
+       <view class="category-text">美食</view>
+     </view> -->
+   </view>
+   <p class="segmenting-line">—— 景点推荐 ——</p>
+  <view class="tourist-spot-list">
+    <navigator wx:for="{{touristSpotList}}" wx:key="{{item.id}}" bindtap="showID" url="/pages/detail/detail?title={{item.id}}" hover-class="none">
+      <view class="tourist-spot-info">    
+        <view class="tourist-spot-image">
+          <image class="tourst-image" src="{{item.imageSrc}}"></image>
+        </view>       
+        <view class="tourist-detail-info">
+          <view class="tourist-info-name">{{item.touristInfoName}}</view>
+          <text class="evaluate-level">{{item.evaluateLevel}}，</text>
+          <text class="evaluate-score">{{item.evaluateScore}}分</text>
+          <text class="consume-num"> | {{item.consumeNum}}人消费</text>
+          <view class="unique-feature" >
+            <view class="feature" wx:for="{{item.feature}}" wx:key="{{index}}" wx:for-item="product">{{product.info}}</view>
+
+          </view>
+          <view class="price">￥<b style="font-weight: bold; font-size: 30rpx">{{item.price}}</b>起</view>
+          <view class="tourist-location">{{item.touristLocation}}</view>
+        </view>
+      </view>
+    </navigator>
+    <navigator url="">
+      <view class="tourist-spot-info">    
+        <view class="tourist-spot-image">
+          <image class="tourst-image" src="/images/tourist/nanchangwandahangyangleyaun.jpg"></image>
+        </view>       
+        <view class="tourist-detail-info">
+          <view class="tourist-info-name">南昌万达海洋乐园</view>
+          <text class="evaluate-level">好，</text>
+          <text class="evaluate-score">4.3分</text>
+          <text class="consume-num"> 8000+人消费</text>
+          <view class="unique-feature">
+            <view class="feature">随买随用</view>
+            <view class="feature">亲子同乐</view>
+            <view class="feature">海豚海狮表演</view>
+            <view class="feature">公园游乐场</view>
+          </view>
+          <view class="price">￥<b style="font-weight: bold; font-size: 30rpx">90</b>起</view>
+          <view class="tourist-location">万达茂/南昌</view>
+        </view>
+      </view>
+    </navigator>   
+    <view class="to-end">没有其他景点了哦~~</view>  
+  </view>
+</view>
+      

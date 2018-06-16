@@ -1,0 +1,432 @@
+/* pages/detail/detail.wxss */
+page{
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  /* overflow: hidden; */
+}
+scroll-view{
+  height: 100%;
+}
+.container{
+  width: 100%;
+  height: 100%;
+  padding: 0  ;
+  /* background-color: blue; */
+  
+}
+view,navigator,button{
+  hover-class:none;
+  /* -webkit-tap-highlight-color: rbga(0,0,0,0) */
+}
+.header{
+  width: 100%;
+  position: relative;
+  margin: 0;
+}
+.header image{
+  width: 100%;
+  height: 400rpx;
+  mode:scaleToFill;
+  
+}
+.tourist-spot-name{
+  font-size: 40rpx;
+  font-weight: bold;
+  color: #fff;
+  z-index: 10;
+  position: absolute;
+  top: 270rpx;
+  left: 30rpx;
+}
+.tourist-spot-intro{
+  color: #e6eeff;
+  font-size: 30rpx;
+  position: absolute;
+  top: 340rpx;
+  right: 30rpx;
+}
+
+.stars{  
+  display: inline-block;
+  height: 40rpxpx;
+  font-style: 30rpxpx;
+  padding-top: 10rpx;
+  text-align: center;
+  position: absolute;
+  top: 320rpx;
+  left: 30rpx;
+}
+/* 评分是网站的组件 */
+.rating-stars{
+  /* text 本身是行内元素 background-image:inline */
+  display: inline-block;
+  vertical-align: middle;
+}
+.rating-stars .rating-star{
+  display: inline-block;
+  /* margin-right: 1px; */
+  background-color: transparent;
+  background-repeat: no-repeat;
+}
+/* ? 提供了星星的几种尺寸 */
+.rating-star-small-full,
+.rating-star-small-half,
+.rating-star-small-gray{
+  width: 35rpx;
+  height: 35rpx;
+  background-size: 30rpx 30rpx;
+}
+.rating-star-small-full{
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAAXNSR0IArs4c6QAAAfhJREFUOBGlVD1LHFEUPXfWrzGJO2uhaIQ0iljESgKSpAjBwpXVKikEl6TzD6TwJ4gWaQMBS8WQgCRZ61QpglUgRbQUbMR1XfwodvbmvE1mdt/ssDPBC493733nnrkf7w2QQrSU29D9wY8poJAkkG6hD8O5E+IGgJsHkr8+7hTjdDpsnA0PLkHE4yK2r5iETyYUfdUkkRa96W3VOhLqXv8oFHNhgGCC/Xwc2jFKR0J0966w1IwVp/LasiNGOBTdxV24bhbqenCQRUY9qLzl2CasGEUVdbyA1M5R1wrq/gUqVxUp4tLghCX85D7VlonFksJQ9Un3w5S8c2sy8z3TGtGDRsla8op0vKe3O0UuMRBVDm9N8uX1Zg/3s8+hmU/sGS/wf8kN0UWZP/tgokJCY+jX3ENmWqJ3zNiJonoKXxalcPY9wFqExqmf3fvIuL+SM2WZNX9SCheHAZnZ2++h9FyxufdaQfG6CBznTvQshtDhSyA4jQieRmExhO2gaFBoi5OK8EkYECiqX9jdd1wauP7tbVgrw8a/TzETBpkp1nWZ96sg8+VV8j0j6VF4Dozo3sB4ix0ZypD3iO3r+QvQbfi1KVkobwcBkj//hmp5msSbXHxqlC67bCtDDr2fN/43wYvMaFkK1dOALNjlJa6Z8RuIP0vfAZfVhj/iqoy46fpKwgAAAABJRU5ErkJggg==
+  );
+}
+.rating-star-small-gray{
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAAXNSR0IArs4c6QAAAeRJREFUOBGtlDsvBFEUx3d2djfiMbTsQ0NEwTaiQSGiRKWREDofgMJHEAqdSPSE0BC9SiEqWQWSzT4SzSbrsR7Fzo7fEXfNg9klbjI5j/s/vzn3MRMI1DFyudxaPp8/qEMa0GqJ0ul0QzgcvtM0zbAsqzMWi+X9aoJ+kzIXiUSmgLXhinZOcn6jJpDieRvA7tvSX64vMJvNdiAdV3I67c5kMkMq/s76AgHMUqTbC0Oh0II9dvvVQ0mlUs2GYbRWKpU2ij4swA3pylX0ZJrmNPn7crn8oOv6Y7FYfEgmk8+i07gOl0z24js6cUHqCU1uwbksefcfYPJCHeDFx5LpUq7DNp2GZeYPw2KrVuLx+Gp1D4GOATwEZvwGSFdv6Oe48PtSVwVKwCfWB/SEJyZxHaMAcBLYmdI6gJIEGg0Gg1e4tTqVZfawzBsFE+u5h4heyLfYRT/4LERrcs95gNwr+RI8nbsLJWa5I+68B8hbPSJ3kYq/03qAvHVYFShL7phni9hSuU/r0TqA8u9DOGArKvCZzXCKEzyL7O8o4Fs1T4ftHGKXisU6gOzfIKLIp2CnVCr1JhKJHVXAiZ4C7Ae8Ts6UPDfCsUUhJRYLrJGCa+xSNBo9ss8pH+gr/jK/tj0a2ETv2IZ35FSkS7HbzakAAAAASUVORK5CYII=
+  );
+}
+.rating-star-small-half{
+  background-image: url();
+}
+.header .location-detail{
+  height: 80rpx;
+  width: 100%;
+  position: relative;
+}
+.header .location-detail .location-icon{
+  width: 50rpx;
+  height: 50rpx;
+  margin: 10rpx;
+}
+.header .location-detail .location-text{
+  padding: 0;
+  font-size: 35rpx;
+  position: absolute;
+  left: 80rpx;
+  top: 17rpx;
+}
+.header .location-detail .location-to{
+  position: absolute;
+  top: 13rpx;
+  right: 30rpx;
+}
+.content{
+  width: 100%;
+  padding: 0 10rpx;
+}
+.content .title{
+  display: flex;
+  width: 100%;
+  height: 80rpx;
+  border-bottom: 1rpx solid #e0e0e0;
+  hover-class:none;
+}
+.content .title .entrance-ticket{
+  display: inline-block;
+  width: 100rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  box-sizing: border-box;
+  border-bottom: 5rpx solid #33a5fe;
+  font-size: 40rpx;
+  font-weight: bold;
+  color: #1b1b1b;
+  text-align: center;
+  margin-left:150rpx; 
+}
+.content .title .notice{
+  width: 100rpx;
+  height: 80rpx;
+  line-height:80rpx;
+  font-size: 36rpx;
+  margin-left:210rpx;
+  
+}
+.content .recommend{
+  display: inline-block;
+  width: 100%;
+  height: 100rpx;
+  line-height: 100rpx;
+  font-size: 50rpx;
+  font-weight: bolder;
+  letter-spacing: 4rpx;
+  text-align: center;
+  color: #ff5e35;
+  /* background-color: yellow; */
+}
+.content .buy-ticket{
+  width: 100%;
+  height: 200rpx;
+  padding: 0 20rpx;
+  display: flex;
+  border-bottom: 1rpx solid #e0e0e0;
+  /* background-color: yellow; */
+}
+.content .buy-ticket .ticket-text{
+  /* flex: 3; */
+  width: 70%;
+  display: inline-block;
+  /* float: left; */
+}
+.content .buy-ticket .ticket-text .ticket-info{
+  font-size: 30rpx;
+  color: #1b1b1b;
+}
+.content .buy-ticket .ticket-text .prompt{
+  padding: 15rpx 0;
+}
+.content .buy-ticket .ticket-text .prompt .prompt-text{
+  display: inline-block;
+  height: 40rpx;
+  line-height: 40rpx;
+  font-size: 20rpx;
+  color: #33a5fe;
+  border: 2rpx solid #33a5fe;
+  padding: 0 8rpx;
+  margin-left: 10rpx;
+}
+.content .buy-ticket .ticket-text .prompt .icon-text{
+  display: inline-block;
+  width: 25rpx;
+  height: 25rpx;
+  line-height: 25rpx;
+  border-radius: 50%;
+  border: 1rpx solid #33a5fe;
+  font-size: 20rpx;
+  text-align: center;
+  color: #33a5fe;
+  margin-left:15rpx; 
+  margin-top: 15rpx;
+}
+.content .buy-ticket .buy{
+  /* flex:1; */
+  width: 25%;
+  display: inline-block;
+  /* float: right; */
+  padding:18rpx 18rpx;
+}
+.content .buy-ticket .buy .price{
+  /* width: 100%; */
+  text-align: center;
+  padding-right: 38rpx;
+  /* background-color: blue; */
+}
+.content .buy-ticket .buy .price .charcter{
+  color: #ff5e35;
+  font-size: 30rpx;
+}
+.content .buy-ticket .buy .price .price-num{
+  color: #ff5e35;
+  font-size: 50rpx;
+  /* font-weight: bold; */
+}
+.content .buy-ticket .buy .price .price-text{
+  color: #959595;
+  font-size: 30rpx;
+}
+.content .buy-ticket .buy .btn{
+  display: inline-block;
+  width: 150rpx;
+  height: 50rpx;
+  line-height: 50rpx;
+  font-size: 25rpx;
+  text-align: center;
+  color: #fff;
+  background-color: #ff5e35;
+  margin-top: 10rpx;
+}
+.content .ticket-category{
+  width: 100%;
+  /* background-color: yellow; */
+  border-top: 15rpx solid #e0e0e0;
+  padding: 0 20rpx;
+}
+.content .ticket-category .ticket-name{
+  color: #000;
+  font-size: 50rpx;
+  /* font-weight: bold; */
+}
+.content .ticket-category .ticket-date{
+  /* display:flex; */
+  height: 100rpx;
+  border-bottom: 1rpx solid #e0e0e0;
+  /* background-color: pink; */
+  position: relative;
+}
+.content .ticket-category .ticket-date .ticket-info{
+  height: 100rpx;
+  line-height: 100rpx;
+  font-size: 35rpx;
+  /* position: absolute;
+  left: 0;
+  top: 0; */
+  
+}
+.content .ticket-category .ticket-date .ticket-price{
+  height: 100rpx;
+  vertical-align: middle;
+  position: absolute;
+  right: 45rpx;
+  top: 0;
+  /* background-color: green; */
+}
+.content .ticket-category .ticket-date .ticket-price .now-price{
+  text-align: center;
+}
+.content .ticket-category .ticket-date .ticket-price .now-price .character,.price-num,.price-text,.show-hide{
+  color: #ff5b24;
+  font-size: 25rpx;
+}
+.content .ticket-category .ticket-date .ticket-price .now-price .price-num{
+  font-size: 45rpx;
+}
+.content .ticket-category .ticket-date .ticket-price .now-price .show-hide{
+  margin-left: 15rpx;
+}
+.content .ticket-category .ticket-date .ticket-price .old-price{
+  font-size: 30rpx;
+  text-decoration: line-through;
+  color: #919191;
+  padding-left: 35rpx;
+}
+.content .reservation-notes{
+  /* width: 100%; */
+  /* height: 750rpx; */
+  border-top: 15rpx solid #e0e0e0;
+  padding: 20rpx;
+  /* background-color: yellow; */
+}
+.content .reservation-notes .notes-title{
+  color: #000;
+  font-size: 50rpx;
+  margin: 20rpx 0;
+}
+.content .reservation-notes .person-treatment{
+  font-size: 35rpx;
+  color: #151515;
+  /* height: 335rpx; */
+  padding-bottom: 30rpx;
+}
+.content .reservation-notes .person-treatment text{
+  display: inline-block;
+  font-size: 25rpx;
+  color: #6d6d6d;
+  height: 45rpx;
+  line-height: 45rpx;
+  margin: 15rpx 0;
+  /* text-wrap:suppress; */
+}
+.content .reservation-notes .open-date{
+  color: #151515;
+  /* height: 450rpx; */
+ padding-bottom: 30rpx;
+}
+.content .reservation-notes .open-date text{
+  display: inline-block;
+  font-size: 25rpx;
+  color: #6d6d6d;
+  height: 35rpx;
+  line-height: 35rpx;
+  margin: 15rpx 0;
+  /* text-wrap:suppress; */
+}
+.content .reservation-notes navigator{
+  text-align: center;
+}
+.content .reservation-notes navigator .see-more{
+  font-size: 35rpx;
+  color: #25a7ee;  
+  text-align: center;
+  /* margin: 2rpx auto; */
+}
+.content .reservation-notes navigator .see-icon{
+  color: #bcbcbc;
+  margin-left: 10rpx;
+}
+.content .netizen-comment-list{
+  /* height: 750rpx; */
+  border-top: 15rpx solid #e0e0e0;
+  border-bottom: 15rpx solid #e0e0e0;
+  padding: 20rpx; 
+}
+.content .netizen-comment-list .netizen-list{
+  color: #000;
+  font-size: 50rpx;
+  margin: 20rpx 0;
+  border-bottom: 1rpx solid #e0e0e0;
+}
+.content .netizen-comment-list .comment-title,.left-character,
+.right-character,.comment-num{
+  display: inline-block;
+  border-bottom: none;
+  font-size: 50rpx;
+}
+.content .netizen-comment-list .left-character{
+  margin-left: 20rpx;
+}
+.content .netizen-comment-list .netizen-list-to{
+  height: 477rpx;
+  padding: 20rpx 0;
+  display: flex;
+}
+.content .netizen-comment-list .netizen-list-to .avatar .avatar-img{
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+  mode:scaleToFill;
+  margin-right: 15rpx;
+  margin-top: 20rpx;
+}
+.content .netizen-comment-list .netizen-list-to .comment-info{
+  display: inline-block;
+  position: relative;
+  height: 100rpx;
+}
+.content .netizen-comment-list .netizen-list-to .comment-info .netizen-name{
+  font-size: 35rpx;
+  color:#000;
+  font-weight: thick;
+}
+.content .netizen-comment-list .netizen-list-to .comment-info .locate{
+  display: inline-block;
+  height: 50rpx;
+  position: absolute;
+  top: 35rpx;
+  left: 10rpx;
+}
+.content .netizen-comment-list .netizen-list-to .comment-info #comment-text{
+  font-size: 30rpx;
+  letter-spacing: 2rpx;
+  margin-top: 50rpx;
+  width: 595rpx;
+  height: 123rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.content .netizen-comment-list .netizen-list-to .comment-info .comment-images{
+  display: flex;
+  height: 150rpx;
+  width: 595rpx;
+  margin: 10rpx 0;
+}
+.content .netizen-comment-list .netizen-list-to .comment-info .comment-images .com-img{
+  width: 150rpx;
+  height: 150rpx;
+  margin-right: 10rpx;
+  mode:scaleToFill;
+}
+.content .netizen-comment-list .netizen-list-to .comment-info .browsed-num,.comment-date{
+  font-size: 30rpx;
+  color: #959595;
+}
+.content .netizen-comment-list .netizen-list-to .comment-info .comment-date{
+  margin-left: 25rpx;
+}
+.content .netizen-comment-list .all-comments{
+  text-align: center;
+}
+.content .netizen-comment-list .see-all-comments{
+  font-size: 35rpx;
+  color: #6d6d6d;
+  margin: 10rpx auto;
+}

@@ -1,0 +1,41 @@
+{
+  "pages": [
+    
+    "pages/index/index",
+    "pages/order/order",
+    "pages/location/location",
+    "pages/detail/detail",
+    "pages/logs/logs",
+    "pages/orderList/orderList",
+    "pages/user/user",
+    "pages/map/map",
+    "pages/selectedTouristList/selectedTouristList",
+    "pages/voucher/voucher"    
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "美团门票",
+    "navigationBarTextSize": "50rpx",
+    "navigationBarTextStyle": "black",
+    "backgrounfColor": "#edece8",
+    "enablePullDownRefresh": true
+  },
+  "tabBar": {
+    "selectedColor": "#1296db",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "./images/icons/home.png",
+        "selectedIconPath": "./images/icons/homecolor.png"
+      },
+      {
+        "pagePath": "pages/user/user",
+        "text": "我的",
+        "iconPath": "./images/icons/user.png",
+        "selectedIconPath": "./images/icons/usercolor.png"
+      }
+    ]
+  }
+}

@@ -1,0 +1,27 @@
+<view class="header">
+  <view class="header-search">
+    <image class="header-search-icon" src="/images/icons/icon_search.png"/>
+    <input class="header-search-text" placeholder="请输入城市" bindinput="bindKeyInput" value="{{inputValue}}" maxlength="140"></input>
+    <image class="clear-input" src="/images/icons/icon_cha.png" bindtap="clearInput"/>
+  </view>
+  <view class="cancle" bindtap="cityBack">取消</view>   
+</view>
+<view class="answer-city " style="display:{{showAnswer?'block':'none'}}" wx:for="{{searchAnswer}}" wx:key="{{item}}" bindtap="cityBack" data-name="{{item.cityName}}">{{item.cityName}}</view>
+<view class="content" style="display:{{showAnswer?'none':'block'}}">
+  <view class="hot-city">
+    <view class="city-title">热门城市</view>
+    <view class="city-box">
+      <view class="city-name" wx:for="{{hotCity}}" wx:key="{{item.id}}" bindtap="cityBack" data-name="{{item.name}}">{{item.name}}</view>
+    </view>
+  </view>
+  <view class="city-list">
+    <view class="character-box" wx:for="{{cityList}}" wx:key="{{item.id}}">
+      <view class="character-name">{{item.characterName}}</view>
+      <view class="character-city" wx:for="{{item.characterCity}}" wx:key="{{index}}" wx:for-item="city" bindtap="cityBack" data-name="{{city.cityName}}">{{city.cityName}}</view>
+    </view>
+  </view>
+</view>
+<view class="side-bar">
+  <view class="side-char" wx:for="{{characters}}" wx:key="{{item.id}}">{{item.char}}</view>
+</view>
+

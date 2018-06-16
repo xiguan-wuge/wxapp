@@ -1,0 +1,193 @@
+/**index.wxss**/
+page {
+  margin: 0;
+  padding: 0;
+}
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.userinfo.hide{
+  display: none;
+}
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+.container{
+  width: 100%;
+   padding:0; 
+ 
+}
+.container.hide{
+  display: none;
+}
+.header{
+  justify-content: space-around;
+  display: flex;
+  width: 100%;
+  height: 80rpx;
+}
+.header-location{
+  font-size: 30rpx;
+  color: #363939;
+  padding: 5rpx 15rpx;
+  margin: 10rpx;
+  height: 40rpx;
+  width: 150rpx;
+  line-height: 40rpx;
+  overflow: hidden;
+}
+.header-location .location-name{
+  display: inline-block;
+  width: 100rpx;
+  text-align: center;
+  overflow: hidden;
+  white-space:nowrap;
+  text-overflow: ellipsis; 
+}
+.header-location .location-icon{
+  display: inline-block;
+  width: 15rpx;
+  height: 15rpx;
+  border-left: 1rpx solid  #3e424a;
+  border-bottom: 1rpx solid #3e424a;
+  transform: rotate(-45deg);
+  vertical-align: center;
+  margin-bottom: 10rpx;
+}
+.header-search{ 
+  padding: 5rpx 15rpx;
+  margin: 10rpx;
+  height: 45rpx;
+  line-height: 45rpx;
+  width: 550rpx;
+  background:#f0f5f6;
+  border-radius: 20rpx;
+  
+}
+.header-search .header-search-text{
+  font-size: 30rpx;
+  display: inline-block;
+  height: 45rpx;
+  line-height: 45rpx;
+  padding-bottom: 5rpx;
+}
+.header-search-icon{
+  display: inline-block;
+  vertical-align: middle;
+  width: 35rpx;
+  height: 35rpx;
+  margin: 5rpx;
+}
+.categoryList{
+  width: 100%;
+  height: 350rpx;
+  border-bottom: 20rpx solid #f4f4f4;
+}
+.category-info{
+  display: inline-block;
+  text-align: center;
+  /* position: relative; */
+  margin-top: 20rpx;
+  height: 150rpx;
+  width: 20%;
+}
+.category-image{
+  width: 95rpx;
+  height: 95rpx;
+}
+.category-text{
+  font-size: 30rpx;
+  width: 100%;
+  line-height: 30rpx;
+}
+.segmenting-line{
+  text-align: center;
+  font-size: 40rpx;
+  color: #888d8e;
+}
+.tourist-spot-info{
+  width: 750rpx;
+  display: flex;
+  margin: 0;
+  padding: 10rpx 0;
+  border-bottom: 1rpx solid #ececec;
+  justify-content: space-between;
+  /* background-color: #ffc640; */
+}
+.tourst-image{
+  width: 190rpx;
+  height: 180rpx;
+  margin-top: 20rpx;
+  margin-left: 20rpx;
+}
+.tourist-detail-info{
+  position: relative;
+  background-color: #fff;
+  width: 500rpx;
+  height: 180rpx;
+  /* display: flex; */
+  margin: 15rpx;
+  /* flex: 1; */
+}
+.tourist-info-name{
+  color: black;
+  font-size: 30rpx;
+  /* margin-bottom: 10rpx; */
+}
+.evaluate-level,.evaluate-score{
+  color: darkblue;
+  font-size: 25rpx;
+}
+.consume-num{
+  font-size: 25rpx;
+  color: #888d8e;
+}
+.unique-feature{
+  display: flex;
+}
+.feature{
+  display: inline-block;
+  color: #007acc;
+  font-size: 23rpx;
+  height: 35rpx;
+  line-height: 35rpx;
+  text-align: center;
+  border: 1rpx solid #007acc;
+  margin: 5rpx;
+  padding: 0 3rpx;
+}
+.unique-feature .feature:nth-child(1){
+  margin-left:0; 
+}
+.price{
+  color: red;
+  font-size: 25rpx;
+  position: absolute;
+  bottom: 10rpx;
+  left: 2rpx;
+}
+.tourist-location{
+  font-size: 25rpx;
+  color: #888d8e;
+  position: absolute;
+  bottom: 10rpx;
+  right: 25rpx;
+}
+.to-end{ 
+  width: 100%;
+  height: 70rpx;
+  line-height: 70rpx;
+  font-size: 30rpx;
+  color: #888d8e;
+  text-align: center;
+  background-color: #fff;
+}
